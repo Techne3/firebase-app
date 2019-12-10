@@ -3,9 +3,10 @@ import './App.css';
 
 
 //components
-// import Nav from './components/Nav'
+import Routes from './components/Routes'
+import Nav from './components/Nav'
 //redux
-import store from './store/store';
+import Store from './store/Store';
 import { Provider } from 'react-redux'
 
 
@@ -13,9 +14,8 @@ import { Provider } from 'react-redux'
 function App() {
   return (
     <Provider store={Store}>
-      <div className="App">
-        <h2>Firebase</h2>
-      </div>
+      <Nav />
+      <Routes />
     </Provider>
   );
 }
